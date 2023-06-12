@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eGg-8j-Awc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kHt-5Y-OsF">
+                                <rect key="frame" x="62" y="388" width="290" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-v7-9Jt">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="6Jj-CS-8Xu"/>
+                                            <constraint firstAttribute="height" constant="120" id="Tcd-sE-Krs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-9I-5nO">
+                                        <rect key="frame" x="170" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="BfU-d2-g9Z"/>
+                                            <constraint firstAttribute="height" constant="120" id="uvO-z7-YaJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW0-1g-BFn">
+                                <rect key="frame" x="142" y="716" width="130" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Fbc-3r-5nG"/>
+                                    <constraint firstAttribute="height" constant="60" id="OHb-sG-u08"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="摇一摇"/>
+                                <buttonConfiguration key="configuration" style="filled" title="摇一摇" cornerStyle="large">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MY3-ey-rwA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mOE-fC-TW6">
+                                <rect key="frame" x="87" y="57.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="2qW-9G-gSW"/>
+                                    <constraint firstAttribute="width" constant="240" id="8WW-73-CSz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eGg-8j-Awc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4U8-vd-OxV"/>
+                            <constraint firstItem="kHt-5Y-OsF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5x0-Vr-aj3"/>
+                            <constraint firstItem="eGg-8j-Awc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="NWO-PP-n35"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nW0-1g-BFn" secondAttribute="bottom" multiplier="10:9" id="amS-yz-MY3"/>
+                            <constraint firstItem="kHt-5Y-OsF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVi-DR-pLB"/>
+                            <constraint firstAttribute="bottom" secondItem="eGg-8j-Awc" secondAttribute="bottom" id="dUR-xS-TFb"/>
+                            <constraint firstItem="mOE-fC-TW6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="1:15" id="fOO-j7-HAQ"/>
+                            <constraint firstItem="eGg-8j-Awc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h84-qB-7cQ"/>
+                            <constraint firstItem="nW0-1g-BFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnN-Ca-26a"/>
+                            <constraint firstItem="mOE-fC-TW6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qbk-Kn-SdY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="Rcs-v7-9Jt" id="ans-yo-Ida"/>
+                        <outlet property="diceImageView2" destination="XJO-9I-5nO" id="vjT-6B-79h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="-48"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6uz-fq-Ae1">
+            <objects>
+                <viewController id="YL6-Wn-Hff" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u9E-YB-9fV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="d3K-bu-tzJ">
+                                <rect key="frame" x="20.5" y="294" width="373" height="162"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fSy-xG-Jii">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="90"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-Sg-OkB">
+                                                <rect key="frame" x="0.0" y="0.5" width="90" height="89"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="AVW-K4-iXa"/>
+                                                    <constraint firstAttribute="width" constant="90" id="CiP-hX-X19"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-Pf-WG2">
+                                                <rect key="frame" x="98" y="11" width="275" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lebus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk5-DU-S10">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用心做教程的iOS讲师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBJ-Pn-79b">
+                                                        <rect key="frame" x="0.0" y="38" width="194.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家只要跟着我的课程坚持学习下去,就一定能学好iOS." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-d8-dr3">
+                                        <rect key="frame" x="0.0" y="102" width="373" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="复昕学堂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IO-6j-9SP">
+                                <rect key="frame" x="41.5" y="89" width="331" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="讲师动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sk6-AD-nad">
+                                <rect key="frame" x="41.5" y="178" width="331" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pUE-Pm-sY3">
+                                <rect key="frame" x="41.5" y="666.5" width="331" height="165.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pUE-Pm-sY3" secondAttribute="height" multiplier="2:1" id="TJP-tr-HAP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tej-6w-TDD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d3K-bu-tzJ" firstAttribute="top" secondItem="Tej-6w-TDD" secondAttribute="top" constant="250" id="8Id-oB-pR6"/>
+                            <constraint firstItem="pUE-Pm-sY3" firstAttribute="width" secondItem="u9E-YB-9fV" secondAttribute="width" multiplier="4:5" id="K3A-xG-QJL"/>
+                            <constraint firstItem="1IO-6j-9SP" firstAttribute="width" secondItem="u9E-YB-9fV" secondAttribute="width" multiplier="0.8" id="KDn-I3-eEO"/>
+                            <constraint firstItem="d3K-bu-tzJ" firstAttribute="centerX" secondItem="u9E-YB-9fV" secondAttribute="centerX" id="Li4-2k-ci8"/>
+                            <constraint firstItem="Sk6-AD-nad" firstAttribute="centerX" secondItem="u9E-YB-9fV" secondAttribute="centerX" id="O8x-FK-48H"/>
+                            <constraint firstItem="Tej-6w-TDD" firstAttribute="bottom" secondItem="pUE-Pm-sY3" secondAttribute="bottom" constant="30" id="TyI-A2-5XG"/>
+                            <constraint firstItem="1IO-6j-9SP" firstAttribute="centerX" secondItem="u9E-YB-9fV" secondAttribute="centerX" id="UBc-CF-LdM"/>
+                            <constraint firstItem="d3K-bu-tzJ" firstAttribute="width" secondItem="u9E-YB-9fV" secondAttribute="width" multiplier="9:10" id="h0Z-wS-5O6"/>
+                            <constraint firstItem="1IO-6j-9SP" firstAttribute="top" secondItem="Tej-6w-TDD" secondAttribute="top" constant="45" id="hXD-AH-JZH"/>
+                            <constraint firstItem="Sk6-AD-nad" firstAttribute="width" secondItem="1IO-6j-9SP" secondAttribute="width" id="noD-BV-yM0"/>
+                            <constraint firstItem="Sk6-AD-nad" firstAttribute="top" secondItem="1IO-6j-9SP" secondAttribute="bottom" constant="7.5" id="wM5-EA-PFe"/>
+                            <constraint firstItem="pUE-Pm-sY3" firstAttribute="centerX" secondItem="u9E-YB-9fV" secondAttribute="centerX" id="xco-gU-8mb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bw7-Uy-7iW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" id="0Za-Or-8dR">
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Co7-lZ-6O5">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="38"/>
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="iOS菜鸟">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="iOS菜鸟">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ena-6i-9gu">
+                            <rect key="frame" x="106" y="0.0" width="116.5" height="38"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="iOS工程师">
+                                <backgroundConfiguration key="background" cornerRadius="0.0">
+                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W64-BZ-czf">
+                            <rect key="frame" x="232.5" y="0.0" width="161.5" height="38"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="iOS工程师">
+                                <backgroundConfiguration key="background" cornerRadius="0.0">
+                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="qkL-bI-KG6"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="519" y="-48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="3000" height="3000"/>
+        <image name="dice1" width="805" height="805"/>
+        <image name="logo" width="3075" height="1678"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
