@@ -4,3 +4,8 @@
 
 快速生成2x，3x图片网站： https://www.appicon.co/ (图标同理也可生成)
 
+
+
+2.谷歌浏览器搜索：关键词+ apple documentation(苹果开发文档)
+
+shake apple documentation
