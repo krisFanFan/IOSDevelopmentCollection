@@ -9,3 +9,8 @@
 2.谷歌浏览器搜索：关键词+ apple documentation(苹果开发文档)
 
 shake apple documentation
+
+3.file->new->group  会创建真实文件夹
+
+file->new->new group without Folder 不会创建真实文件夹
+

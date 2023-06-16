@@ -13,6 +13,13 @@
 		A4F53F7D2715938700C22525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F53F7B2715938700C22525 /* Main.storyboard */; };
 		A4F53F7F2715938A00C22525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F53F7E2715938A00C22525 /* Assets.xcassets */; };
 		A4F53F822715938A00C22525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F53F802715938A00C22525 /* LaunchScreen.storyboard */; };
+		C06E7DB52A3C63D5000C52BE /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DAE2A3C63D5000C52BE /* note4.wav */; };
+		C06E7DB62A3C63D5000C52BE /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DAF2A3C63D5000C52BE /* note5.wav */; };
+		C06E7DB72A3C63D5000C52BE /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DB02A3C63D5000C52BE /* note7.wav */; };
+		C06E7DB82A3C63D5000C52BE /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DB12A3C63D5000C52BE /* note6.wav */; };
+		C06E7DB92A3C63D5000C52BE /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DB22A3C63D5000C52BE /* note2.wav */; };
+		C06E7DBA2A3C63D5000C52BE /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DB32A3C63D5000C52BE /* note3.wav */; };
+		C06E7DBB2A3C63D5000C52BE /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = C06E7DB42A3C63D5000C52BE /* note1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		A4F53F7E2715938A00C22525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F53F812715938A00C22525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4F53F832715938A00C22525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06E7DAE2A3C63D5000C52BE /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		C06E7DAF2A3C63D5000C52BE /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		C06E7DB02A3C63D5000C52BE /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		C06E7DB12A3C63D5000C52BE /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		C06E7DB22A3C63D5000C52BE /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		C06E7DB32A3C63D5000C52BE /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		C06E7DB42A3C63D5000C52BE /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +75,26 @@
 				A4F53F792715938700C22525 /* ViewController.swift */,
 				A4F53F7B2715938700C22525 /* Main.storyboard */,
 				A4F53F7E2715938A00C22525 /* Assets.xcassets */,
+				C06E7DAD2A3C63D5000C52BE /* SoundFiles */,
 				A4F53F802715938A00C22525 /* LaunchScreen.storyboard */,
 				A4F53F832715938A00C22525 /* Info.plist */,
 			);
 			path = Xylophone;
+			sourceTree = "<group>";
+		};
+		C06E7DAD2A3C63D5000C52BE /* SoundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C06E7DAE2A3C63D5000C52BE /* note4.wav */,
+				C06E7DAF2A3C63D5000C52BE /* note5.wav */,
+				C06E7DB02A3C63D5000C52BE /* note7.wav */,
+				C06E7DB12A3C63D5000C52BE /* note6.wav */,
+				C06E7DB22A3C63D5000C52BE /* note2.wav */,
+				C06E7DB32A3C63D5000C52BE /* note3.wav */,
+				C06E7DB42A3C63D5000C52BE /* note1.wav */,
+			);
+			name = SoundFiles;
+			path = "../../../6-5素材/SoundFiles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +155,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06E7DBA2A3C63D5000C52BE /* note3.wav in Resources */,
+				C06E7DB72A3C63D5000C52BE /* note7.wav in Resources */,
+				C06E7DB62A3C63D5000C52BE /* note5.wav in Resources */,
 				A4F53F822715938A00C22525 /* LaunchScreen.storyboard in Resources */,
+				C06E7DB82A3C63D5000C52BE /* note6.wav in Resources */,
 				A4F53F7F2715938A00C22525 /* Assets.xcassets in Resources */,
+				C06E7DB92A3C63D5000C52BE /* note2.wav in Resources */,
 				A4F53F7D2715938700C22525 /* Main.storyboard in Resources */,
+				C06E7DBB2A3C63D5000C52BE /* note1.wav in Resources */,
+				C06E7DB52A3C63D5000C52BE /* note4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D797TDVZQ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Xylophone/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "木琴";
@@ -317,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D797TDVZQ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Xylophone/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "木琴";
