@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,39 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuO-r7-v82">
-                                <rect key="frame" x="128.5" y="407" width="157" height="82"/>
-                                <color key="backgroundColor" systemColor="tintColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW1-Id-NdS">
-                                <rect key="frame" x="274" y="184" width="81" height="46"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzG-tF-SNs">
-                                <rect key="frame" x="153" y="455.5" width="42" height="21"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kAD-g3-Jfe">
+                                <rect key="frame" x="20.5" y="124" width="373" height="162"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ztv-DA-hma">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="90"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-XE-fvA">
+                                                <rect key="frame" x="0.0" y="0.5" width="90" height="89"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="6dV-hK-Tuu"/>
+                                                    <constraint firstAttribute="height" constant="90" id="zar-dy-d1h"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lf5-gM-rrQ">
+                                                <rect key="frame" x="98" y="11" width="275" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="licy23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-Q7-3bK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凡使我痛苦，必使我强大" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF5-VD-oKl">
+                                                        <rect key="frame" x="0.0" y="38" width="224.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凡使我痛苦，必使我强大凡使我痛苦，必使我强大" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhG-hu-rzg">
+                                        <rect key="frame" x="0.0" y="102" width="373" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.89380069650000005" green="0.7767741923" blue="0.84740982570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tW1-Id-NdS" secondAttribute="trailing" constant="59" id="D4x-Ku-f4x"/>
-                            <constraint firstItem="iuO-r7-v82" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GbA-6b-rTZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iuO-r7-v82" secondAttribute="bottom" constant="373" id="HeQ-W2-0Hd"/>
-                            <constraint firstItem="iuO-r7-v82" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Lon-PT-Jp1"/>
-                            <constraint firstItem="tW1-Id-NdS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EzG-tF-SNs" secondAttribute="trailing" constant="8" symbolic="YES" id="VV8-Xl-hDc"/>
-                            <constraint firstItem="tW1-Id-NdS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="Ykx-Xc-92F"/>
-                            <constraint firstItem="EzG-tF-SNs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="hZ6-UH-B8E"/>
-                            <constraint firstItem="EzG-tF-SNs" firstAttribute="baseline" secondItem="iuO-r7-v82" secondAttribute="baseline" id="vmJ-86-weh"/>
+                            <constraint firstItem="kAD-g3-Jfe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Ha-Jk-ZVK"/>
+                            <constraint firstItem="kAD-g3-Jfe" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="9:10" id="PVt-rp-bGn"/>
+                            <constraint firstItem="kAD-g3-Jfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="tfH-O5-3ut"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,11 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
