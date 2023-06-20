@@ -39,7 +39,6 @@ class ViewController: UIViewController {
     //    当摇晃手机之后，调用函数
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         updateDiceImage()
-        
     }
 }
 
