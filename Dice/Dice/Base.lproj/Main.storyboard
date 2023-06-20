@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="uqz-CV-qAY">
-                                <rect key="frame" x="65" y="372" width="260" height="100"/>
+                                <rect key="frame" x="276" y="137.66666666666666" width="260" height="100"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="kiH-0G-tAx">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -35,11 +35,15 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-0x-hp7">
-                                <rect key="frame" x="141" y="600" width="108" height="60"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vuV-X3-bIi">
+                                <rect key="frame" x="286" y="23.666666666666671" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Shs-2G-o5d"/>
+                                    <constraint firstAttribute="width" constant="240" id="kXe-BB-lMt"/>
+                                    <constraint firstAttribute="height" constant="128" id="xX6-si-je5"/>
                                 </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-0x-hp7">
+                                <rect key="frame" x="352" y="265.33333333333331" width="108" height="53.333333333333314"/>
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -54,23 +58,16 @@
                                     <action selector="roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJh-F9-e1K"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vuV-X3-bIi">
-                                <rect key="frame" x="75" y="95" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="kXe-BB-lMt"/>
-                                    <constraint firstAttribute="height" constant="128" id="xX6-si-je5"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.89380069650000005" green="0.7767741923" blue="0.68761750310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yfG-0x-hp7" secondAttribute="bottom" constant="150" id="5pK-97-fjN"/>
-                            <constraint firstItem="yfG-0x-hp7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6tf-Sp-bkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yfG-0x-hp7" secondAttribute="bottom" multiplier="10:9" id="CeW-p6-bdK"/>
                             <constraint firstItem="uqz-CV-qAY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kpd-Nj-GHi"/>
                             <constraint firstItem="uqz-CV-qAY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MI7-rX-4fT"/>
+                            <constraint firstItem="yfG-0x-hp7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OaT-NX-Kg6"/>
                             <constraint firstItem="vuV-X3-bIi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qQW-Go-1Ow"/>
-                            <constraint firstItem="vuV-X3-bIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="wc2-lX-0wX"/>
+                            <constraint firstItem="vuV-X3-bIi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="1:15" id="wc2-lX-0wX"/>
                         </constraints>
                     </view>
                     <connections>
