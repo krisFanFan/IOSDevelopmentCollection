@@ -14,3 +14,6 @@ shake apple documentation
 
 file->new->new group without Folder 不会创建真实文件夹
 
+3.在info列表中让应用只支持竖屏
+
+想要横屏时页面元素不重新根据约束进行调整，依旧保持竖屏的状态可到info->Supported interface orientations （iPhone）里面把支持横屏的删除。（在General 里面的Device Orientation 里面调整不会更新）
